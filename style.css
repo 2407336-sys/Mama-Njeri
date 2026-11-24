@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Georgia, serif;
+  background: #fff8e8;
+  color: #2a1a0a;
+}
+
+/* Header */
+header {
+  background: #2a1a0a;
+  color: #ffd23f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 24px;
+  font-family: Verdana, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  height: 40px;
+  width: 40px;
+}
+
+header a {
+  color: #ffd23f;
+  text-decoration: none;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+/* Hero banner */
+.hero {
+  background: linear-gradient(135deg, #e8552d, #ffa940);
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 2rem;
+}
+
+/* Layout */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e3d5b8;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.card h2 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+/* Menu table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Verdana, sans-serif;
+  font-size: 13px;
+}
+
+th {
+  background: #ffd23f;
+  text-align: left;
+}
+
+th, td {
+  padding: 8px 10px;
+  border: 1px solid #e3d5b8;
+}
+
+/* Order form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+input, select {
+  padding: 8px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+button {
+  background: #e8552d;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 14px;
+  font-size: 14px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+button:hover {
+  background: #c9431f;
+}
+
+/* Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* Contact text */
+#visit p {
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+/* Footer */
+footer {
+  background: #2a1a0a;
+  color: #ffd23f;
+  text-align: center;
+  padding: 14px;
+  font-family: Verdana, sans-serif;
+  font-size: 12px;
+}
+
+/* Phones: stack the cards */
+@media (max-width: 700px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+}

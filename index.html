@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mama Njeri's Kitchen</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="brand">
+      <img src="Resources/logo.svg" alt="Mama Njeri's Kitchen logo" class="logo">
+      <span>Mama Njeri's Kitchen</span>
+    </div>
+    <nav>
+      <a href="#menu">Menu</a> ·
+      <a href="#order">Order</a> ·
+      <a href="#visit">Visit</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Fresh Kenyan food, cooked daily</h1>
+  </section>
+
+  <main>
+    <div class="row">
+      <section id="menu" class="card">
+        <h2>Menu</h2>
+        <table>
+          <thead>
+            <tr><th>Dish</th><th>Price</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Pilau</td><td>KES 350</td></tr>
+            <tr><td>Ugali &amp; Sukuma</td><td>KES 250</td></tr>
+            <tr><td>Chapati (2)</td><td>KES 100</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="order" class="card">
+        <h2>Place an order</h2>
+        <form>
+          <input type="text" name="name" placeholder="Your name" required>
+          <select name="dish">
+            <option>Pilau</option>
+            <option>Ugali &amp; Sukuma</option>
+            <option>Chapati (2)</option>
+          </select>
+          <button type="submit">Send order</button>
+        </form>
+      </section>
+    </div>
+
+    <div class="row">
+      <section id="gallery" class="card">
+        <h2>Gallery</h2>
+        <div class="gallery">
+          <img src="Resources/pilau.svg" alt="Plate of pilau">
+          <img src="Resources/ugali.svg" alt="Ugali and sukuma wiki">
+          <img src="Resources/chapati.svg" alt="Chapati">
+        </div>
+      </section>
+
+      <section id="visit" class="card">
+        <h2>Opening hours &amp; contact</h2>
+        <div>
+          <p>Monday to Saturday: 7:00 AM to 9:00 PM</p>
+          <p>Sunday: 9:00 AM to 6:00 PM</p>
+          <p>Nairobi, Kenya</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Mama Njeri's Kitchen</p>
+  </footer>
+
+</body>
+</html>
